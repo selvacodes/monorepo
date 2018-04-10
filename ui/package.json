@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"ui\"",
+    "start": "node index.js",
+    "format": "prettier --write *.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.3.1"
+  }
+}

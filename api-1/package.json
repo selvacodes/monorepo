@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "api-1",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo 'api 1'",
+    "start": "nodemon index.js",
+    "format": "prettier --write *.js"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "nodemon": "^1.17.3"
+  }
+}

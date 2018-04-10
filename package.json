@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.11.1"
+  },
+  "scripts": {
+    "test": "lerna run test"
+  },
+  "workspaces": ["api-1", "api-2", "ui", "shared"]
+}
