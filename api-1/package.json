@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo 'api 1'",
     "start": "backpack",
+    "build": "backpack build",
     "format": "prettier --write *.js"
   },
   "main": "index.js",
@@ -12,6 +13,7 @@
   "dependencies": {
     "backpack-core": "^0.7.0",
     "chalk": "^2.3.2",
+    "express": "^4.16.3",
     "nodemon": "^1.17.3"
   }
 }

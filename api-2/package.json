@@ -4,6 +4,7 @@
   "scripts": {
     "test": "echo 'api'",
     "start": "backpack dev",
+    "build": "backpack build",
     "format": "prettier --write *.js"
   },
   "dependencies": {

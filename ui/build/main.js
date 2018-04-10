@@ -1,4 +1,4 @@
-require('/Users/selva.g/projects/monorepo/node_modules/source-map-support/register.js')
+require('/Users/selva.g/projects/misc/monorepo/node_modules/source-map-support/register.js')
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache

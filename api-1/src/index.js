@@ -1,17 +1,14 @@
 var http = require("http");
-var server = http.createServer(function(request, response) {
-  response.writeHead(200, { "Content-Type": "text/html" });
-  response.write("<!DOCTYPE 'html'>");
-  response.write("<html>");
-  response.write("<head>");
-  response.write("<title>Hello World Page</title>");
-  response.write("</head>");
-  response.write("<body>");
-  response.write("Hellooooooo Am alive!");
-  response.write("</body>");
-  response.write("</html>");
-  response.end();
+var { port } = require("./files");
+
+var express = require("express");
+
+var app = express();
+
+app.get("/", function(req, res) {
+  res.send("Hello Express World!");
 });
 
-server.listen(6001);
-console.log("Server is listening @6001");
+app.listen(port, function() {
+  console.log("Example app listening on port 6001!");
+});
