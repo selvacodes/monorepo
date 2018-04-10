@@ -3,10 +3,11 @@
   "name": "api-2",
   "scripts": {
     "test": "echo 'api'",
-    "start": "nodemon index.js",
+    "start": "backpack dev",
     "format": "prettier --write *.js"
   },
   "dependencies": {
+    "backpack-core": "^0.7.0",
     "nodemon": "^1.17.3",
     "shared": "1.0.0"
   },

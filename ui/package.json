@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"ui\"",
-    "start": "node index.js",
+    "start": "backpack",
     "format": "prettier --write *.js"
   },
   "license": "MIT",
   "dependencies": {
+    "backpack-core": "^0.7.0",
     "react": "^16.3.1"
   }
 }
