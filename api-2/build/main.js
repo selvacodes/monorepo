@@ -62,29 +62,45 @@ module.exports =
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__(1);
-
+module.exports = require("micro");
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const test = __webpack_require__(2);
+module.exports = __webpack_require__(2);
 
-console.log(test);
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+const { send } = __webpack_require__(0);
+const micro = __webpack_require__(0);
+const { router, get } = __webpack_require__(3);
+
+const hello = (req, res) => send(res, 200, `Hello ${req.params.who}`);
+
+const notfound = (req, res) => send(res, 404, "Not found route");
+
+const routes = router(get("/hello/:who", hello), get("/*", notfound));
+
+const server = micro(routes);
+
+server.listen(7000);
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports) {
 
-module.exports = require("shared");
+module.exports = require("microrouter");
 
 /***/ })
 /******/ ]);

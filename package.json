@@ -5,7 +5,20 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "git-pre-commit": "format",
+    "format": "werun format"
   },
-  "workspaces": ["api-1", "api-2", "ui", "shared"]
+  "workspaces": [
+    "api-1",
+    "api-2",
+    "ui",
+    "shared"
+  ],
+  "dependencies": {
+    "wsrun": "^3.0.0"
+  },
+  "devDependencies": {
+    "@zeit/git-hooks": "^0.1.4"
+  }
 }
