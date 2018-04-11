@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "test": "lerna run test",
-    "git-pre-commit": "format",
-    "format": "werun format"
+    "git-pre-commit": "yarn format",
+    "format": "wsrun format --exclude-missing"
   },
   "workspaces": [
     "api-1",
